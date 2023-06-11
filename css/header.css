@@ -1,0 +1,29 @@
+.header-bg {
+    width: 700px;
+    height: auto;
+    position: absolute;
+    left: 36px;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 26px;
+    text-transform: uppercase;
+}
+
+.navbar-menu-list {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    color: var(--text-primary);
+}
