@@ -58,10 +58,6 @@
   background-color: #fafbfc;
 }
 
-.aside-btn:hover {
-  transition: all 0.3s;
-  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #669731, #15397a);
-}
 
 .patterns-bg {
   width: 100%;
