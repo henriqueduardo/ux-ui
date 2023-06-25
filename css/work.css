@@ -1,7 +1,7 @@
 .work-bg {
   width: 100%;
   height: auto;
-  background: #0a382b;
+  background: #00875f;
   padding-bottom: 60px;
 }
 
@@ -39,7 +39,8 @@
 
 .work-image {
   width: 100%;
-  height: auto;
+  max-height: 420px;
+  padding: 20px;
 }
 
 .work-content-desc {
@@ -50,7 +51,8 @@
 }
 
 @media (max-width: 1280px) {
-  .work-content, .work-image {
+  .work-content,
+  .work-image {
     width: 100%;
   }
 }

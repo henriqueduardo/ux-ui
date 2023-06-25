@@ -1,0 +1,68 @@
+.images-bg {
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+}
+
+.images-content-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.images-content {
+  display: flex;
+  gap: 30px;
+  overflow-x: scroll;
+}
+
+.images-content::-webkit-scrollbar {
+  display: none;
+}
+
+.image-click {
+  cursor: pointer;
+  height: 300px;
+  width: 340px;
+  object-fit: cover;
+}
+
+.images-text-content {
+  padding: 60px 100px;
+  position: relative;
+}
+
+.images-text-content h2 {
+  font-size: 3rem;
+  font-family: Luxia;
+  font-weight: 200;
+}
+
+.images-text-content p {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 200px;
+}
+
+.images-text-content li {
+  margin: 20px 40px;
+}
+
+.js-content-texts .images-text {
+  display: none;
+}
+
+.js-content-texts .images-text.active {
+  display: block !important;
+  animation: show .5s forwards; 
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    transform: translate3d(-30px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}

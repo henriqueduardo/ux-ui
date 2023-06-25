@@ -1,3 +1,26 @@
+function initClickImage() {
+  const images = document.querySelectorAll(".js-content-images img");
+  const text = document.querySelectorAll(".js-content-texts .images-text");
+  text[0].classList.add("active");
+
+  if (images.length && text.length) {
+    function activeTab(index) {
+      text.forEach((section) => {
+        section.classList.remove("active");
+      });
+      text[index].classList.add("active");
+    }
+
+    images.forEach((itemText, index) => {
+      itemText.addEventListener("click", () => {
+        activeTab(index);
+      });
+    });
+  }
+}
+
+initClickImage();
+
 function initAccordion() {
   const activeClass = "active"; // classe
   const accordionList = document.querySelectorAll(".js-accordion dt"); // lista
